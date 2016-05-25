@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typhoon Visualize</title>
+    <style type="text/css" media="screen">
+    body {
+        color: #fff;
+        background-color: #000;
+    }
+    .graticule {
+        fill: none;
+        stroke: #777;
+    }
+    .land {
+        stroke: #fff;
+        stroke-width: 1.0;
+    }
+    .typhoon_list {
+        position: absolute;
+        top: 50px;
+        z-index:  100;
+        color: #fff;
+    }
+    .track_lines {
+        stroke: #777;
+        stroke-width: 1.5;
+        fill: none;
+    }
+
+    .track_points {
+        fill: #777;
+    }
+
+    .selected_track_line {
+        stroke: #f00;
+        stroke-width: 2.0;
+        fill: none;
+    }
+    .selected_track_point {
+        fill: #f00;
+    }
+
+    .hpagraph{
+        position: absolute;
+        z-index:  15;
+        background-color: #fff;
+        left: 10px;
+        bottom: 10px;
+        opacity:0.6;
+    }
+    .hpaline {
+        fill: none;
+        stroke: #00f;
+        stroke-width: 2px;
+    }
+    
+    svg {
+        position: absolute;
+    }
+
+    #title{
+        position: absolute;
+        font-size:20pt;
+        z-index:  30;
+    }
+    
+    </style>
+</head>
+<body>
+<div id="title">RSMC Tokyo - Typhoon Center - Best Track Data (2015)</div>
+<div style="position: absolute; bottom: 160px; left:20px;z-index: 200">Central pressure (hPa)</div>
+<script src="./bundle.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
